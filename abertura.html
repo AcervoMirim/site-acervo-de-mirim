@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pontos da Escola de Mirim</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ffffff;
+            color: #333;
+        }
+
+        header {
+            background-color: #1e6e1e;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .conteudo-abertura {
+            padding: 50px 20px;
+            background-color: #f1f1f1;
+        }
+
+        .conteudo-abertura h2 {
+            font-size: 2.5em;
+            color: #1e6e1e;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        /* Caixa de Ponto */
+        .ponto-box {
+            background-color: #ffffff;
+            border: 1px solid #1e6e1e;
+            border-radius: 12px; /* Borda arredondada */
+            margin: 0 auto 20px; /* Adiciona espaçamento entre as caixas */
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 60%; /* Largura fixa de 60% da tela */
+            max-width: 700px; /* Limita a largura máxima */
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .ponto-box h5 {
+            margin-bottom: 10px;
+            color: #1e6e1e;
+            font-size: 1.3em;
+        }
+
+        /* Mini Player de Áudio */
+        .audio-player {
+            width: 120px;
+            height: 20px;
+            margin-top: 10px;
+        }
+
+        .letra-ponto {
+            margin-top: 10px;
+            font-size: 1em;
+            color: #555;
+            line-height: 1.4;
+            text-align: center;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        footer {
+            background-color: #1e6e1e;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* Botão de retorno */
+        .btn-return {
+            background-color: #1e6e1e;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+            text-decoration: none;
+            border-radius: 12px; /* Borda arredondada */
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .btn-return:hover {
+            background-color: #145d14;
+        }
+
+        /* Container para centralizar o botão */
+        .return-btn-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .conteudo-abertura h2 {
+                font-size: 2em;
+            }
+
+            .ponto-box {
+                width: 80%; /* Aumenta a largura para 80% em telas menores */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Pontos da Escola de Mirim</h1>
+    </header>
+
+    <!-- Seção de Conteúdo abertura da gira -->
+    <div id="conteudo-abertura" class="conteudo-abertura">
+        <h2>Abertura da gira</h2>
+
+         <!-- Caixa de Ponto 1 -->
+        <div class="ponto-box">
+            <h5>Hino</h5>
+            <div class="letra-ponto">
+                <p> Refletiu a Luz Divina<br>
+                    Com todo seu esplendor<br>
+                    Vem do reino de Oxalá<br>
+                    Aonde há paz e amor<br>
+                    Luz que refletiu na terra<br>
+                    Luz que refletiu no mar<br>
+                    Luz que veio de Aruanda<br>
+                    Para nos iluminar<br>
+                    Umbanda é paz e amor<br>
+                    Um mundo cheio de Luz<br>
+                    É força que nos dá vida<br>
+                    E a grandeza nos conduz<br>
+                    Avante, filhos de fé<br>
+                    Como a nossa lei não há<br>
+                    Levando ao mundo inteiro<br>
+                    A bandeira de Oxalá<br>
+                    Levando ao mundo inteiro<br>
+                    A bandeira de Oxalá.  <br>                  
+                    </p>
+            </div>
+        </div>
+
+        <!-- Caixa de Ponto 2 -->
+        <div class="ponto-box">
+            <h5>Saudação ao triângulo da vida</h5>
+            <!-- Embutindo o vídeo do YouTube -->
+            <iframe width="200" height="113" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="letra-ponto">
+                <p> Salve o Triângulo da Vida<br>
+                    Viva Tupã <br>
+                    Salve Oxalá <br>
+                    Salve Iemanjá <br>
+                    Salve o povo do Oriente<br>
+                    Salve o Caboclo Mirim<br>
+                    Salve o Caboclo Tupinambá<br>
+                    Salve o Caboclo 7 flechas<br>
+                    Salve todos os Caboclos e todas as caboclas que assim seja<br>
+                    Salve todos os Tupixabas e Morubixabas de Lei de Umbanda<br>
+                    Salve a Umbanda<br>
+                    Saravá Iofá<br>
+                    Saravá o Pai Roberto <br>
+                    Saravá o Pai Joaquim <br>
+                    Saravá Maria Conga<br>
+                    Saravá todos os Pretos Velhos<br>
+                    Saravá todas as Pretas Velhas<br>
+                    Saravá todos os trabalhadores <br>
+                    Que assim seja !!<br>
+                </p>
+            </div>
+        </div>
+
+            <!-- Caixa de Ponto 3 -->
+        <div class="ponto-box">
+            <h5>Defumador (Oxóssi - Cabocla Jurema)</h5>
+            <!-- Embutindo o vídeo do YouTube -->
+            <iframe width="200" height="113" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="letra-ponto">
+                <p> Entrei lá na mata e pedi<br>
+                    Que a Jurema desse forças para mim<br>
+                    (BIS)<br>
+                    Ela me deu e aqui estou<br>
+                    Com as ervas da Jurema fazendo defumador<br>
+                    (BIS)<br>
+                    Eu defumo, eu defumo, vamos defumar<br>
+                    Eu defumo, eu defumo, na fé de pai Oxalá<br>
+                    (BIS)<br>
+                </p>
+            </div>
+        </div>
+
+            <!-- Caixa de Ponto 4 -->
+        <div class="ponto-box">
+            <h5>Prece e ponto de abertura da gira</h5>
+            <!-- Embutindo o vídeo do YouTube -->
+            <iframe width="200" height="113" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="letra-ponto">
+                <p> Com os pretos velhos e os caboclos <br>
+                    Vamos todos saravá<br>
+                    (BIS)<br>
+                    Vamos pedir licença a Deus <br>
+                    Nosso senhor<br>
+                    Para os trabalhos começar<br>
+                    (BIS)<br>
+                    Senhor dos mundos<br>
+                    Oxalá! Meu pai<br>
+                    (BIS)<br>
+                    Baixai, baixai na umbanda meu senhor<br>
+                    E a nossa Terra iluminai<br>
+                    (BIS)<br>
+                    <br>
+                    Eu abro a nossa gira com Deus e nossa senhora<br>
+                    Eu abro a nossa gira <br>
+                    Samborê pemba de Angola <br>                  
+                </p>
+            </div>
+        </div>
+
+            <!-- Caixa de Ponto 5 -->
+        <div class="ponto-box">
+            <h5>Prece de abertura dos trabalhos</h5>
+            <!-- Embutindo o vídeo do YouTube -->
+            <iframe width="200" height="113" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="letra-ponto">
+                <p> Sobre a graça de nosso Pai Tupã<br>
+                    Pedimos que a irradiação do sol de Oxalá<br>
+                    Baixe sobre os nossos guias e nossas cabeças<br>
+                    Possibilitando a boa direção dos trabalhos<br>
+                    Que se efetuarão neste terreiro<br>
+                    Que do oriente, Xangô-Kaô<br>
+                    Com seus profundos e místicos ensinamentos<br>
+                    Vele por todos nós e pelos nossos trabalhos<br>
+                    Trazendo-lhes a mais absoluta firmeza e segurança<br>
+                    Que o nosso bondoso e sacrossanto coração de nossa mãe Oxum<br>
+                    Ajude-nos a extrair do nosso íntimo<br>
+                    O fel dos maus instintos <br>
+                    Que Yemanjá, dispondo de poderosas forças de purificação<br>
+                    Permita que as suas sagradas águas <br>
+                    Venham lavar as impurezas dos nossos corações<br>
+                    Que Xangô, do alto de sua pedreira<br>
+                    Nos mande a faísca dum raio luminoso <br>
+                    A fim de podermos tratar com serenidade e justiça <br>
+                    Os nossos semelhantes<br>
+                    Que Ogum, com sua gloriosa espada<br>
+                    Nos proteja e nos defenda de qualquer influência perturbadora ou maléfica<br>
+                    Fazendo o bem predominar sempre <br>
+                    Onde quer que estejamos<br>
+                    Que Oxóssi, das profundezas das matas<br>
+                    Nos envie conjuntamente com as suas ervas <br>
+                    O bálsamo da consolação<br>
+                    Tornando bem esclarecidas as nossas mentes<br>
+                    Na missão de bem fazer ao próximo<br>
+                    A Yofá, pedimos que a sua bondade<br>
+                    A paciência e o carinho de seus velhos africanos<br>
+                    Venham ajudar-nos a manter em paz e harmonia <br>
+                    O nosso terreiro <br>
+                    Fazendo-nos sentir a felicidade inundar todas as almas<br>
+                    Salve o rei de umbanda, Arcanjo Miguel!<br>
+                    Salve os arcanjos Gabriel e Rafael!<br>
+                    Salve o Tupixaba e os Morubixabas da Lei de Umbanda!<br>
+                    Salve a umbanda! Salve a umbanda! Salve a umbanda!<br>
+                    Permiti nosso pai Tupã<br>
+                    Que em vosso sagrado nome<br>
+                    Iniciemos os trabalhos que vão realizar-se neste terreiro<br>
+                    QUE ASSIM SEJA!<br>
+                </p>
+            </div>
+        </div>
+
+            <!-- Caixa de Ponto 6 -->
+        <div class="ponto-box">
+            <h5>Saudação à Oxalá</h5>
+            <!-- Embutindo o vídeo do YouTube -->
+            <iframe width="200" height="113" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="letra-ponto">
+                <p> Meu pai quando você nasceu<br>
+                    Você mostrou a igualdade <br>
+                    Meu pai quando você cresceu<br>
+                    Andou pregando a caridade <br>
+                    (BIS)<br>
+                    E hoje, já raiou a liberdade <br>
+                    Você mandou chuva que pinga <br>
+                    Pinga no terreiro <br>
+                    E avançou a humanidade<br>
+                    (BIS)  <br>                                      
+                </p>
+            </div>
+        </div>
+
+            <!-- Caixa de Ponto 7 -->
+        <div class="ponto-box">
+            <h5>Oxóssi - Saudação ao Caboclo Mirim</h5>
+            <!-- Embutindo o vídeo do YouTube -->
+            <iframe width="200" height="113" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="letra-ponto">
+                <p> Quando ele vem<br>
+                    Lá do oriente <br>
+                    Ele vem com ordem de Oxalá<br>
+                    (BIS)<br>
+                    Sua missão é muito grande <br>
+                    É espalhar a caridade<br>
+                    Pra seus filhos abençoar<br>
+                    (BIS)<br>
+                    Eu saravá mamãe Oxum<br>
+                    Eu saravá papai Oxalá<br>
+                    <br>
+                    Eu saravá o seu Mirim<br>
+                    Por que ele é o nosso rei<br>
+                    É dono deste jacutá<br>
+                    (BIS)  <br>                                     
+                </p>
+            </div>
+        </div>
+
+            <!-- Caixa de Ponto 8 -->
+        <div class="ponto-box">
+            <h5>Incorporação do comando (Tupixaba - CCT) - Xangô (Caboclo Cobra Coral da Pedreira)</h5>
+            <!-- Embutindo o vídeo do YouTube -->
+            <iframe width="200" height="113" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="letra-ponto">
+                <p> Passarada cantou<br>
+                    Lá nas matas da Jurema<br>
+                    Anunciando um novo dia de luz<br>
+                    (BIS)<br>
+                    Xangô bradou<br>
+                    E brilhou um arco-íris na cachoeira <br>
+                    Cobra coral <br>
+                    Vem descendo a pedreira<br>
+                    (BIS)   <br>                          
+                </p>
+            </div>
+        </div>
+
+            <!-- Caixa de Ponto 9 -->
+        <div class="ponto-box">
+            <h5>Incorporação do 7º grau (Morubixabas - CCT) - Xangô (Caboclo Xangô 7 Pedreiras)</h5>
+            <!-- Embutindo o vídeo do YouTube -->
+            <iframe width="200" height="113" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="letra-ponto">
+                <p> Caboclo, você é o rei das matas<br>
+                    Bebeu água da cascata<br>
+                    Mãe Oxum quem mandou<br>
+                    (BIS)<br>
+                    Ele bradou, ele bradou <br>
+                    Sete Pedreiras, ele é filho de Xangô<br>
+                    (BIS)    <br>                                   
+                </p>
+            </div>
+        </div>
+
+            <!-- Caixa de Ponto 10 -->
+        <div class="ponto-box">
+            <h5>Incorporação do 6º grau (Abareguassú - SCCT) - Xangô (Caboclo Pedra Azul)</h5>
+            <!-- Embutindo o vídeo do YouTube -->
+            <iframe width="200" height="113" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="letra-ponto">
+                <p> Quem é esse caboclo <br>
+                    Mora na banda de lá<br>
+                    Vem na umbanda para trabalhar <br>
+                    (BIS)<br>
+                    Ele é caboclo <br>
+                    Caminha no cruzeiro do sul <br>
+                    As estrelas do céu lhe chamam <br>
+                    De o caboclo Pedra Azul<br>
+                    (BIS)<br>                                        
+                </p>
+            </div>
+        </div>
+
+            <!-- Caixa de Ponto 11 -->
+        <div class="ponto-box">
+            <h5>Incorporação do 5º grau (Abaré - SCT) - Yemanjá (Caboclo Jaguar)</h5>
+            <!-- Embutindo o vídeo do YouTube -->
+            <iframe width="200" height="113" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="letra-ponto">
+                <p> Na sua flecha tem uma bandeira<br>
+                    E a estrela que lhe guia no mar <br>
+                    <br>
+                    Vem cortando onda, cortando mironga <br>
+                    Ele vem de Aruanda para a Umbanda <br>
+                    No ponto da Sereia Mamãe Yemanjá <br>
+                    É o Caboclo Jaguar<br>
+                    (BIS)  <br>                                     
+                </p>
+            </div>
+        </div>
+
+            <!-- Caixa de Ponto 12 -->
+        <div class="ponto-box">
+            <h5>Incorporação do 4º grau (Abaré-Mirim - CT) - Ogum (Caboclo Itapuã) </h5>
+            <!-- Embutindo o vídeo do YouTube -->
+            <iframe width="200" height="113" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="letra-ponto">
+                <p> Ogum Iara mandou chamar<br>
+                    Esse caboclo pra na umbanda ir trabalhar<br>
+                    Lhe deu a lei da qual é cumpridor <br>
+                    Esse caboclo na umbanda é vencedor<br>
+                    Vem saravando esse gongá<br>
+                    Vem saravando filhos de fé <br>
+                    <br>
+                    Esse caboclo é Itapuã <br>
+                    É da ceara de Jesus de Nazaré<br>
+                    (BIS)<br>
+                </p>
+            </div>
+        </div>
+
+            <!-- Caixa de Ponto 13 -->
+        <div class="ponto-box">
+            <h5>Incorporação do 3º grau (Bojaguassú - T) - Oxóssi (Caboclo Arruda)</h5>
+            <!-- Embutindo o vídeo do YouTube -->
+            <iframe width="200" height="113" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="letra-ponto">
+                <p> No arrebol, quando o sol vai se esconder<br>
+                    Lá na linha do horizonte<br>
+                    Vem a lua a brilhar<br>
+                    Caboclo Arruda, vem na umbanda trabalhar<br>
+                    Saravando o jacutá <br>
+                    Ele é orirê, ele é orirá <br>
+                    Vem na umbanda pra seus filhos abençoar<br>
+                    Ele é orirê, ele é orirá<br>
+                    Caboclo Arruda vamos todos saravá<br>
+                    No arrebol<br>                    
+                </p>
+            </div>
+        </div>
+
+             <!-- Caixa de Ponto 14 -->
+            <div class="ponto-box">
+                <h5>Incorporação do 2º e 1º grau (Bojá e Bojá-Mirim) - Oxóssi (Caboclo Sete Flechas)</h5>
+                <!-- Embutindo o vídeo do YouTube -->
+                <iframe width="200" height="113" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <div class="letra-ponto">
+                    <p> O luar apareceu <br>
+                        E as matas clareou <br>
+                        (BIS)<br>
+                        E apareceu o caboclo Sete Flechas <br>
+                        Vem pra saravá nas matas e no Juremá<br>
+                        (BIS)<br>
+                        Mas ele é, ele é, ele é<br>
+                        Seu Sete Flechas ele é caçador<br>
+                        (BIS)<br>                        
+                    </p>
+                </div>
+            </div>
+
+             <!-- Caixa de Ponto 15 -->
+             <div class="ponto-box">
+                <h5>SEGUE A GIRA</h5>
+                <!-- Embutindo o vídeo do YouTube -->
+                <iframe width="200" height="113" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <div class="letra-ponto">
+                    <p> OKÊ CABOCLO
+                    </p>
+                </div>
+            </div>
+
+        <!-- Container para o botão de retorno -->
+        <div class="return-btn-container">
+            <a href="Mirim.html" class="btn-return">Voltar à Página Inicial</a>
+        </div>
+
+        <div class="return-btn-container">
+            <a href="caboclo.html" class="btn-return">Ir para a gira de caboclo</a>
+        </div>
+
+        <div class="return-btn-container">
+            <a href="congo.html" class="btn-return">Ir para a gira de Preto velho</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Pontos da Escola de Mirim. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap JS e dependências -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pontos da Escola de Mirim</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ffffff;
+            color: #333;
+        }
+
+        header {
+            background-color: #1e6e1e;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .conteudo-congo {
+            padding: 50px 20px;
+            background-color: #f1f1f1;
+        }
+
+        .conteudo-congo h2 {
+            font-size: 2.5em;
+            color: #1e6e1e;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        /* Caixa de Ponto */
+        .ponto-box {
+            background-color: #ffffff;
+            border: 1px solid #1e6e1e;
+            border-radius: 12px; /* Borda arredondada */
+            margin: 0 auto 20px; /* Adiciona espaçamento entre as caixas */
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 60%; /* Largura fixa de 60% da tela */
+            max-width: 700px; /* Limita a largura máxima */
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .ponto-box h5 {
+            margin-bottom: 10px;
+            color: #1e6e1e;
+            font-size: 1.3em;
+        }
+
+        /* Mini Player de Áudio */
+        .audio-player {
+            width: 120px;
+            height: 20px;
+            margin-top: 10px;
+        }
+
+        .letra-ponto {
+            margin-top: 10px;
+            font-size: 1em;
+            color: #555;
+            line-height: 1.4;
+            text-align: center;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        footer {
+            background-color: #1e6e1e;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* Botão de retorno */
+        .btn-return {
+            background-color: #1e6e1e;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+            text-decoration: none;
+            border-radius: 12px; /* Borda arredondada */
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .btn-return:hover {
+            background-color: #145d14;
+        }
+
+        /* Container para centralizar o botão */
+        .return-btn-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .conteudo-congo h2 {
+                font-size: 2em;
+            }
+
+            .ponto-box {
+                width: 80%; /* Aumenta a largura para 80% em telas menores */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Pontos da Escola de Mirim</h1>
+    </header>
+
+    <!-- Seção de Conteúdo Ibejada -->
+    <div id="conteudo-congo" class="conteudo-congo">
+        <h2>Ibejada</h2>
+
+         <!-- Caixa de Ponto 1 -->
+        <div class="ponto-box">
+            <h5>Prece de abertura da gira das crianças</h5>
+            <div class="letra-ponto">
+                <p>SALVE O DIA DE HOJE! SALVE O DIA DE HOJE!<br>
+                    SALVE SÃO COSME E DAMIÃO!<br>
+                    SARAVÁ XANGÔ! SARAVÁ XANGÔ! SARAVÁ XANGÔ!<br>
+                    <br>
+                    HOJE TEM ALEGRIA! HOJE TEM ALEGRIA!<br>
+                    NA MINHA ARUANDA, HOJE TEM ALEGRIA!<br>
+                    NO MEU TERREIRO. VEJO AS CRIANÇAS. VEJO A IBEIJADA<br>
+                    VEJO COSME E DAMIÃO. VEJO DOUM. TERCEIRO IRMÃO<br>
+                    VEJO CRISPIM, CRISPINIANO. VEJO MARTIM, MARTINIANO<br>
+                    VEJO NEUZINHA, VEJO PEDRINHO, VEJO ALABÁ VEJO PEDRINHO.<br>
+                    IRMÃOS DE UMA FAMÍLIA SANTA. MÁRTIRES QUE ESCREVERAM COM SEUS SANGUES. AS PÁGINAS DE FÉ, NA LEI DE JESUS<br>
+                    SANTOS MENINOS, ENTIDADES DE LUZ, FILHOS DE ZAMBI, DISCÍPULOS DE OXALÁ<br>
+                    EU ME AJOELHO NO ALTAR DOS MENINOS PEDINDO AGÔ, AGÔ, AGÔ-IÊ PARA AS CRIANÇAS<br>
+                    AGÔ-IÊ PARA IBEIJADA NO SEU DIA DE FESTA<br>
+                    SARAVÁ COSME, DAMIÃO E DOUM<br>
+                    SARAVÁ OS BACUROS DO SEU 4 LUAS.<br>
+                    <br>
+                    NO MEU TERREIRO VEJO TAMBÉM A NOSSA SENHORA DA CONCEIÇÃO.<br>
+                    GLORIOSA MAMÃE OXUM. A FALANGE DAS ÁGUAS DESCEM NO CARICÓ PARA SAUDAR AS CRIANÇAS<br>
+                    SARAVÁ CRISPIM – CRISPINIANO <br>
+                    NO MEU PEGI, VEJO TAMBÉM O GUERREIRO DOS CAMPOS DO HUMAITÁ. <br>
+                    É SÃO JORGE. É SEU OGUM BEIRA-MAR, QUE VENCE BATALHAS. QUE VENCE DEMANDAS.<br>
+                    VEJO TODAS AS FALANGES DO DEUS DA GUERRA NA FESTA DE IBEIJADA.<br>
+                    OGUM ROMPE-MATO; OGUM DI-LÊ; OGUM IARA E OGUM MEGÊ.<br>
+                    SARAVÁ OGUM! OGUM-NHÊ MEU PAI<br>
+                    SARAVÁ O PROTETOR DOS FRACOS E ANGUSTIADOS.<br>
+                    VEJO TAMBÉM SÃO MIGUEL NA GLORIOSA FALANGE DE OGUM IARA<br>
+                    SALVE OS ARCANJOS SÃO GABRIEL E SÃO RAFAEL.<br>
+                    <br>
+                    HOJE TEM ALEGRIA! HOJE TEM ALEGRIA!<br>
+                    NA MINHA ARUANDA HOJE TEM ALEGRIA!<br>
+                    A IBEIJADA BRINCA CONTENTE. EU SARAVO A SUA BANDA NA GIRA DAS CRIANÇAS <br>
+                    TAMBÉM A QUERIDA NANÃ. A SANTA DAS SANTAS<br>
+                    MARTIM-MARTINIANO FEISTEJO NO ARERÊ. SARAVANDO NANÂ. NANÃ BURUQUE.<br>
+                    <br>
+                    HOJE TEM ALEGRIA! HOJE TEM ALEGRIA!<br>
+                    NO MEU PEGI VEJO IBEIJADA, VEJO TAMBÉM MEU PAI XANGÔ!<br>
+                    CAÔ MEU PAI, CAÔ MEU PAI. CAÔ CABECILÊ XANGÔ<br>
+                    EU SARAVO A FALANGE DA PEDREIRA E DA CACHOEIRA<br>
+                    XANGÔ ALAFIM; XANGÔ AGODÔ; XANGÔ ALOFÁ; XANGÔ ABOMIM; XANGÔ AGONJÚ. XANGÔ CAÔ, CAÔ CABECILÊ. SARAVÁ XANGÔ<br>
+                    <br>
+                    HOJE TEM ALEGRIA! HOJE TEM ALEGRIA!<br>
+                    NO MEU TERREIRO VEJO O POVO DE ARUANDA; VEJO O POVO DE ANGOLA; O POVO DE CONGO; VEJO AS ALMAS SANTAS E BENDITAS<br>
+                    VEJO MEUS PRETOS VELHOS DESCENDO NO ARERÊ<br>
+                    NA FESTA MAIOR, NA FESTA DE IBEIJADA<br>
+                    SARAVÁ OS PRETOS VELHOS AMIGOS. PROTETORES DAS CRIANÇAS:<br>
+                    SARAVÁ PAI BENEDITO; SARAVÁ CONGO DOMINGOS; SARAVÁ CHICO MINEIRO; SARAVÁ PAI ANACLETO; <br>
+                    SARAVÁ PAI BERNADO; SARAVÁ PAI BONIFÁCIO; SARAVÁ O PAI RAIEL; <br>
+                    SARAVÁ PAI TOMÉ; SARAVÁ PAI JOÃO BANDOLÊ; SARAVÁ PAI JOAQUIM DE ANGOLA;<br> 
+                    SARAVÁ PAI JOSÉ; SARAVÁ PAI MIGUEL DE ARUANDA.<br>
+                    SARAVÁ MEUS PRETOS VELHOS.<br>
+                    SARAVÁ VOVÓ CONGA; VOVÓ XICA; VOVÓ JOANA; SARAVÁ VOVÓ ROSA DA BAHIA; SARAVÁ VOVÓ CAMBINDA DA GUINÉ;<br>
+                    SARAVÁ VOVÓ MONJOLA; MÃE FIRMINA; SARAVÁ MARIA REDONDA.<br>
+                    SARAVÁ MINHAS QUERIDAS PRETAS VELHAS<br>
+                    SARAVÁ PROTETORES DA MINHA UMBANDA<br>
+                    MADRINHAS DO MEU CABUTUÊ. <br>
+                    <br>
+                    HOJE TEM ALEGRIA! HOJE TEM ALEGRIA! <br>
+                    NO TERREIRO DE OXALÁ<br>
+                    VEJO GIRANDO, SARAVANDO MEU JACUTÁ; VEJO CAMBONO, OGAM. FILHOS DE FÉ<br>
+                    EU SARAVO O MEU PAI. ATOTÔ OBALUAÊ, MEU PAI<br>
+                    <br>
+                    NO MEU JACUTÁ VEJO TAMBÉM SÃO SEBASTIÃO E SUA FALANGE PODEROSA<br>
+                    ELE É OXÓSSI, ELE É CABOCLO. A SUA FLECHA TEM PENA DOURADA; SEU CAPACETE BRILHA NA ALVORADA.<br> 
+                    NA SUA MÃO ESTÁ O SEU BODOQUE, SARAVÁ OXÓSSI. OXÓSSI É REI DA MATA. IRURÊ, IRURÁ, TUPÃ;<br>
+                    SARAVÁ SUA FALANGE DE BRAVO GUERREIRO<br>
+                    SARAVÁ OXÓSSI PENA VERDE; SEU ARRUDA; SARAVÁ SEU ARRANCA TOCO;<br>
+                    SARAVÁ SEU PENA AZUL; SALVE SEU VENCE DEMANDA; SEU PENA BRANCA; SARAVÁ SEU SAQUAREMA; SEU AYMORÉ;<br>
+                    SALVE SEU TUPIARA; COBRA CORAL; SARAVÁ SEU VENTANIA; SEU 7 FLECHAS;<br> 
+                    SARAVÁ SEU RAIO DE LUZ; SALVE SEU COBRA VERDE; SALVE SEU 7 MONTANHAS; SARAVÁ SEU SARACUTINGA.<br>
+                    <br>
+                    HOJE TEM ALEGRIA! HOJE TEM ALEGRIA!<br>
+                    NA MINHA ARUANDA HOJE TEM ALEGRIA!<br>
+                    NO ARERÊ DA UMBANDA, BEIJI E IBEIJADA GLORIOSA<br>
+                    HOJE É DIA DE FESTA. SARAVÁ COSME, DAMIÃO E DOUM<br>
+                    NO MEU CARICÓ. DENTRO DAS VIBRAÇÕES DE YEMANJÁ. <br>
+                    A DEUSA DAS ÁGUAS. <br>
+                    AGÔ-IÊ! AGÔ-IÊ MAMÃE YEMANJÁ<br>
+                    AGÔ-IÊ PARA AS CRIANÇAS MINHA MÃE<br>
+                    ODOCIABA! ODOCIABA!<br>
+                    <br>
+                    VEJO TAMBÉM A FALANGE DE OXUM-MARÉ<br>
+                    AINHE-NHEU MAMÃE OXUM!<br>
+                    VEJO IANSÃ NA FALANGE DE SANTA BÁRBARA<br> 
+                    EPARREI IANSÃ!<br>
+                    SARAVÁ IANSÃ; SARAVÁ MOÇA RICA!<br>
+                    SALVE JANAINA; SARAVÁ A CABOCLA TUPIARA!<br>
+                    SARAVÁ A CABOCLA JANDIRA!<br>
+                    SARAVÁ JUREMA!<br>
+                    SALVE O POVO DA MATA; O POVO DO MAR E O POVO DA CACHOEIRA!<br>
+                    <br>
+                    HOJE TEM ALEGRIA! HOJE TEM ALEGRIA!<br>
+                    NA FESTA DE IBEIJADA; SARAVO O POVO DO ORIENTE!<br>
+                    FILHOS DE ZAMBI CAMINHA LUAR<br>
+                    EU SARAVO TODAS AS LINHAS QUE DESCEM NO TERREIRO DE UMBANDA. NA FESTA MAIOR. NA FESTA DE IBEIJADA<br>
+                    NA GRAÇA DE ZAMBI, NA GRAÇA DE OXALÁ<br>
+                    NA GRAÇA DE OROLUM, MEU PAI<br>
+                    <br>
+                    EU SARAVO O MEU PAI<br>
+                    SARAVÁ MEU GUIA MAIOR. SARAVÁ AS IBEIJADAS!<br>
+                    SARAVÁ COSME DAMIÃO E DOUM!<br>
+                    SARAVÁ CRISPIM; CRISPINIANO!<br>
+                    SARAVÁ MARTIM; MARTINIANO!<br>
+                    SARAVÁ TODAS AS CRIANÇAS<br>
+                    <br>
+                    HOJE TEM ALEGRIA! HOJE TEM ALEGRIA!<br>
+                    NA MINHA ARUANDA HOJE TEM ALEGRIA!<br>
+                    SARAVÁ AS IBEIJADAS! SALVE SÃO COSME E SÃO DAMIÃO!<br>
+                    SALVE TODA A FALANGE DE BEIJI E IBEIJADA! <br>
+                    SARAVÁ XANGÔ. CAÔÔÔ-CABECILE MEU PAI! <br> 
+                    CAÔÔÔ-CABECILE MEU PAI! <br>
+                    ORIIII – BEIJADAAA...<br>
+                    </p>
+            </div>
+        </div>
+
+        <!-- Caixa de Ponto 2 -->
+        <div class="ponto-box">
+            <h5>Antes do sol nascer</h5>
+            <!-- Embutindo o vídeo do YouTube -->
+            <iframe width="200" height="113" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="letra-ponto">
+                <p> Antes do sol nascer<br>
+                    A lua se esconder<br>
+                    Madrugada findava<br>
+                          (BIS)<br>
+                    A lua clareia a mata<br> 
+                    Ela é prateada <br>
+                    Também clareia a beira mar<br>
+                    Eu vi as crianças brincando na ponta da areia<br>
+                    Saldando a sereia Yemanjá<br>
+                    Saravá Ibeijada<br>
+                </p>
+            </div>
+        </div>
+
+            <!-- Caixa de Ponto 3 -->
+        <div class="ponto-box">
+            <h5>É com a alegria das crianças</h5>
+            <!-- Embutindo o vídeo do YouTube -->
+            <iframe width="200" height="113" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="letra-ponto">
+                <p> É com a alegria das crianças <br>
+                    É com a justiça de Xangô<br>
+                    (BIS)<br>
+                    Segura a pedra meu pai Xangô<br>
+                    Segura a banda Cosme e Damião<br>
+                    (BIS)<br>
+                </p>
+            </div>
+        </div>
+
+            <!-- Caixa de Ponto 4 -->
+        <div class="ponto-box">
+            <h5>A alegria chegou</h5>
+            <!-- Embutindo o vídeo do YouTube -->
+            <iframe width="200" height="113" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="letra-ponto">
+                <p> A alegria chegou <br>
+                    Mamãe Oxum quem mandou<br>
+                    (BIS)<br>
+                    As crianças que vem lá do céu<br>
+                    Vem trazendo a paz e o amor<br>
+                    E o perfume suave da flor <br>
+                    (BIS)<br>
+                </p>
+            </div>
+        </div>
+
+            <!-- Caixa de Ponto 5 -->
+        <div class="ponto-box">
+            <h5>Vai Doum</h5>
+            <!-- Embutindo o vídeo do YouTube -->
+            <iframe width="200" height="113" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="letra-ponto">
+                <p> Vai, vai, vai, Doum<br>
+                    Vai, vai, São Cosme e Damião<br>
+                    Vai pedir a Crispiniano <br>
+                    No jardim colher as rosas <br>
+                    Pra mãe Yemanjá<br>
+                    (BIS)<br>
+                    Vai que a onda vai<br>
+                    Vai que a onda vem <br>
+                    Vai que a onda vai <br>
+                    E a lua vem também<br>
+                    (BIS)<br>
+                </p>
+            </div>
+        </div>
+
+            <!-- Caixa de Ponto 6 -->
+        <div class="ponto-box">
+            <h5>Caboclinho da Mata</h5>
+            <!-- Embutindo o vídeo do YouTube -->
+            <iframe width="200" height="113" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="letra-ponto">
+                <p> Caboclinho da mata <br>
+                    Oi, que mata é a sua?<br>
+                    (BIS)<br>
+                    Sua mata é de Oxóssi <br>
+                    Cheira guiné <br>
+                    E cheira arruda<br>
+                    (BIS)<br>
+                </p>
+            </div>
+        </div>
+
+            <!-- Caixa de Ponto 7 -->
+        <div class="ponto-box">
+            <h5>Mamãe e vovó tem</h5>
+            <!-- Embutindo o vídeo do YouTube -->
+            <iframe width="200" height="113" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="letra-ponto">
+                <p> Mamãe, mamãe, vovó tem<br>
+                    Em baixo da cama, vintem <br>
+                    (BIS)<br>
+                    Cala a boca moleque <br>
+                    Não brinca, não zomba<br>
+                    Que embaixo da cama tem mironga<br>
+                    (BIS)<br>
+                </p>
+            </div>
+        </div>
+
+            <!-- Caixa de Ponto 8 -->
+        <div class="ponto-box">
+            <h5>Rosa mais formosa</h5>
+            <!-- Embutindo o vídeo do YouTube -->
+            <iframe width="200" height="113" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="letra-ponto">
+                <p> Fui no jardim colher a rosa mais formosa<br>
+                    A vovozinha me pediu mais uma rosa<br>
+                    (BIS)<br>
+                    Cosme e Damião, ô Doum<br>
+                    Crispim, Crispiniano <br>
+                    Todos filhos de Ogum<br>
+                    (BIS)<br>
+                </p>
+            </div>
+        </div>
+
+            <!-- Caixa de Ponto 9 -->
+        <div class="ponto-box">
+            <h5>Esquin-dim auê, esquin-dim aua</h5>
+            <!-- Embutindo o vídeo do YouTube -->
+            <iframe width="200" height="113" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="letra-ponto">
+                <p> Vamos ver as crianças brincar <br>
+                    Cosme e Damião é quem vem saravá<br>
+                    (BIS)<br>
+                    Esquin-dim, esquin-dim, esquin-dim, auê<br>
+                    Esquin-dim, esquin-dim, esquin-dim, aua<br>
+                    (BIS)<br>
+                    São Cosme e São Damião<br>
+                    Onde está Crispiniano<br>
+                    Foi passear com Doum<br>
+                    Lá na beira do oceano <br>
+                    <br>
+                    Esquin-dim, esquin-dim, esquin-dim, auê<br>
+                    Esquin-dim, esquin-dim, esquin-dim, aua<br>
+                    (BIS)<br>
+                </p>
+            </div>
+        </div>
+
+            <!-- Caixa de Ponto 10 -->
+        <div class="ponto-box">
+            <h5>Um, dois, três</h5>
+            <!-- Embutindo o vídeo do YouTube -->
+            <iframe width="200" height="113" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="letra-ponto">
+                <p> Um, dois, três<br>
+                    Quatro, cinco, seis<br>
+                    Eu quero ver criança na cabeça de vocês <br>
+                </p>
+            </div>
+        </div>
+
+            <!-- Caixa de Ponto 11 -->
+        <div class="ponto-box">
+            <h5>Taca fogo na mata</h5>
+            <!-- Embutindo o vídeo do YouTube -->
+            <iframe width="200" height="113" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="letra-ponto">
+                <p> Taca fogo na mata que ele vem<br>
+                    Taca fogo na mata que ele vem<br>
+                </p>
+            </div>
+        </div>
+
+            <!-- Caixa de Ponto 12 -->
+        <div class="ponto-box">
+            <h5>Mariazinha - Na beira do Rio</h5>
+            <!-- Embutindo o vídeo do YouTube -->
+            <iframe width="200" height="113" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="letra-ponto">
+                <p> Mariazinha nasceu na beira do rio <br>
+                    Na beira do rio, lá no juremá<br>
+                    (BIS)<br>
+                    Aonde a lua brilha <br>
+                    Clareia campina <br>
+                    Clareia a mata pra Ibeijada brincar<br>
+                    (BIS)<br>
+                </p>
+            </div>
+        </div>
+
+            <!-- Caixa de Ponto 13 -->
+        <div class="ponto-box">
+            <h5>Mariazinha - Vem Mariazinha</h5>
+            <!-- Embutindo o vídeo do YouTube -->
+            <iframe width="200" height="113" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="letra-ponto">
+                <p> Vem, vem, vem, Mariazinha<br>
+                    Vem, vem, vem, que o titio está chamando<br>
+                    (BIS)<br>
+                    Vem, vem, vem, Mariazinha<br>
+                    Deixa a água dessa gruta <br>
+                    Que o titio está chamando<br>
+                    (BIS)<br>
+                </p>
+            </div>
+        </div>
+
+            <!-- Caixa de Ponto 14 -->
+        <div class="ponto-box">
+            <h5>Doum - Anel de pedra verde</h5>
+            <!-- Embutindo o vídeo do YouTube -->
+            <iframe width="200" height="113" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="letra-ponto">
+                <p> O meu anel de pedra verde<br>
+                    Que eu perdi no mar azul <br>
+                    Quem achou foi Doum (2x)<br>
+                </p>
+            </div>
+        </div>
+
+             <!-- Caixa de Ponto 15 -->
+            <div class="ponto-box">
+                <h5>Ponto de cura - Doce e cocada eu dou</h5>
+                <!-- Embutindo o vídeo do YouTube -->
+                <iframe width="200" height="113" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <div class="letra-ponto">
+                    <p> Se as crianças me ajudarem eu dou <br>
+                        Doce e cocada eu dou <br>
+                        (BIS)<br>
+                        Doce e cocada eu dou <br>
+                        (BIS 4x)<br>
+                    </p>
+                </div>
+            </div>
+
+        <!-- Container para o botão de retorno -->
+        <div class="return-btn-container">
+            <a href="Mirim.html" class="btn-return">Voltar à Página Inicial</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Pontos da Escola de Mirim. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap JS e dependências -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

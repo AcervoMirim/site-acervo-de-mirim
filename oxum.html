@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pontos da Escola de Mirim</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ffffff;
+            color: #333;
+        }
+
+        header {
+            background-color: #1e6e1e;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .conteudo-oxum {
+            padding: 50px 20px;
+            background-color: #f1f1f1;
+        }
+
+        .conteudo-oxum h2 {
+            font-size: 2.5em;
+            color: #1e6e1e;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        /* Caixa de Ponto */
+        .ponto-box {
+            background-color: #ffffff;
+            border: 1px solid #1e6e1e;
+            border-radius: 12px; /* Borda arredondada */
+            margin: 0 auto 20px; /* Adiciona espaçamento entre as caixas */
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 60%; /* Largura fixa de 60% da tela */
+            max-width: 700px; /* Limita a largura máxima */
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .ponto-box h5 {
+            margin-bottom: 10px;
+            color: #1e6e1e;
+            font-size: 1.3em;
+        }
+
+        /* Mini Player de Áudio */
+        .audio-player {
+            width: 120px;
+            height: 20px;
+            margin-top: 10px;
+        }
+
+        .letra-ponto {
+            margin-top: 10px;
+            font-size: 1em;
+            color: #555;
+            line-height: 1.4;
+            text-align: center;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        footer {
+            background-color: #1e6e1e;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* Botão de retorno */
+        .btn-return {
+            background-color: #1e6e1e;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+            text-decoration: none;
+            border-radius: 12px; /* Borda arredondada */
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .btn-return:hover {
+            background-color: #145d14;
+        }
+
+        /* Container para centralizar o botão */
+        .return-btn-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .conteudo-oxum h2 {
+                font-size: 2em;
+            }
+
+            .ponto-box {
+                width: 80%; /* Aumenta a largura para 80% em telas menores */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Pontos da Escola de Mirim</h1>
+    </header>
+
+    <!-- Seção de Conteúdo de Oxum -->
+    <div id="conteudo-oxum" class="conteudo-oxum">
+        <h2>OXUM</h2>
+
+         <!-- Caixa de Ponto 1 -->
+        <div class="ponto-box">
+            <h5>Dona do ouro e da beleza</h5>
+            <div class="letra-ponto">
+                <p> Uma rosa, junto ao rio a cantar<br>
+                    Uma rosa, em oração a Oxalá <br>
+                    (BIS)<br>
+                    Que encanta a cachoeira <br>
+                    É amorosa e nos consola <br>
+                    Essa rosa é mãe Oxum <br>
+                    Dona do ouro e da beleza<br>
+                    (BIS)<br>                                                       
+                    </p>
+            </div>
+        </div>
+
+        <!-- Caixa de Ponto 2 -->
+        <div class="ponto-box">
+            <h5>A cachoeira da mamãe Oxum</h5>
+            <!-- Embutindo o vídeo do YouTube -->
+            <iframe width="200" height="113" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="letra-ponto">
+                <p> A cachoeira da mamãe Oxum <br>
+                    É tão bonita que dá gosto ver <br>
+                    (BIS)<br>
+                    As águas correm <br>
+                    As águas brilham <br>
+                    Oh que beleza mamãe<br>
+                    Que maravilha <br>
+                    (BIS)<br>
+                    Aieuieu Oxum <br>
+                    Me pega, me joga no seu aieuieu<br>
+                    (BIS 4x)<br>                                       
+                </p>
+            </div>
+        </div>
+
+            <!-- Caixa de Ponto 3 -->
+        <div class="ponto-box">
+            <h5>Cascata da mamãe Oxum</h5>
+            <!-- Embutindo o vídeo do YouTube -->
+            <iframe width="200" height="113" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="letra-ponto">
+                <p> Na cascata da mamãe Oxum <br>
+                    Deixo as águas caírem sobre mim<br>
+                    (BIS)<br>
+                    Minha senhora, da Conceição <br>
+                    Olhai os filhos, que aqui estão <br>
+                    <br>
+                    E eu também, sou filho seu <br>
+                    Nos traga paz mamãe Oxum, oraieuieu<br>
+                    (BIS) <br>                                    
+                </p>
+            </div>
+        </div>
+
+            <!-- Caixa de Ponto 4 -->
+        <div class="ponto-box">
+            <h5>Se a água pudesse falar</h5>
+            <!-- Embutindo o vídeo do YouTube -->
+            <iframe width="200" height="113" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="letra-ponto">
+                <p> Se a água da cascata pudesse falar<br>
+                    Pediria ao luar<br>
+                    Que mandasse uma mensagem <br>
+                    A Oxalá<br>
+                    Que acabe as guerras<br>
+                    E que o mundo viva de amor<br>
+                    Que o meu caminho <br>
+                    Seja um jardim em flor <br>
+                    Mas como é lindo <br>
+                    O murmúrio da cascata<br>
+                    Provocou chuva de prata<br>
+                    E deu graças ao luar<br>
+                    <br>
+                    Mas oh meu deus <br>
+                    Oh meu Deus que bom seria <br>
+                    Toda Terra sorriria <br>
+                    Se a água pudesse falar, oraieuieu<br>
+                    (BIS)  <br>                                                    
+                </p>
+            </div>
+        </div>
+
+            <!-- Caixa de Ponto 5 -->
+        <div class="ponto-box">
+            <h5>Refletindo na cascata</h5>
+            <!-- Embutindo o vídeo do YouTube -->
+            <iframe width="200" height="113" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="letra-ponto">
+                <p> Céu azul<br>
+                    Lua cor de prata<br>
+                    (BIS)<br>
+                    E o arco-íris<br>
+                    Refletindo na cascata<br>
+                    (BIS)<br>
+                    A minha mãe Oxum <br>
+                    Refletindo na cascata<br>
+                    E o arco-íris <br>
+                    Refletindo na cascata<br>
+                    <br>
+                    E eu só queria <br>
+                    Ver a minha mãe Oxum <br>
+                    (BIS) <br>                                     
+                </p>
+            </div>
+        </div>
+
+            <!-- Caixa de Ponto 6 -->
+        <div class="ponto-box">
+            <h5>Cobriu com seu manto</h5>
+            <!-- Embutindo o vídeo do YouTube -->
+            <iframe width="200" height="113" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="letra-ponto">
+                <p> Foi ela, quem me cobriu com seu manto<br>
+                    Foi ela, que na minha tristeza <br>
+                    Enxugou meu pranto<br>
+                    (BIS)<br>
+                    Me deu a mão pra levantar <br>
+                    E me deu forças na vida <br>
+                    Pra eu caminhar<br>
+                    Mamãe Oxum<br>
+                    Tu és a paz <br>
+                    Tu és verdade <br>
+                    Te peço por caridade <br>
+                    Ilumine este gongá<br>
+                    Tu és a paz, a luz e o amor<br>
+                    Tu és a deusa que Oxalá abençoou <br>
+                    Tu és a deusa que Oxalá abençoou <br>                                                                       
+                </p>
+            </div>
+        </div>
+
+            <!-- Caixa de Ponto 7 -->
+        <div class="ponto-box">
+            <h5>Acendei os candieiros</h5>
+            <!-- Embutindo o vídeo do YouTube -->
+            <iframe width="200" height="113" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="letra-ponto">
+                <p> Oxum, nossa mãe lá do céu<br>
+                    Ela é dona da Terra <br>
+                    É a rainha do mar<br>
+                    (BIS)<br>
+                    Oxum, acendei os candieiros<br>
+                    Iluminai este terreiro <br>
+                    Para seus filhos trabalhar<br>
+                    (BIS)<br>                                                                  
+                </p>
+            </div>
+        </div>
+
+            <!-- Caixa de Ponto 8 -->
+        <div class="ponto-box">
+            <h5>Saudação à Oxum</h5>
+            <!-- Embutindo o vídeo do YouTube -->
+            <iframe width="200" height="113" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="letra-ponto">
+                <p> Mamãe Oxum, dona do ouro <br>
+                    Mamãe Oxum, é grande o seu tesouro<br>
+                    Esse filho seu está cansado de sofrer<br>
+                    Oraieuieu não deixa ele padecer<br>
+                    Oraieuieu Oxum Apará <br>
+                    Olha eu Oxum Tilim<br>
+                    Oraieuieu Oxum Apandá <br>
+                    Olha eu Abaomi<br>
+                    Sonhei que via água rolando na pedreira<br>
+                    Formando cachoeiras para Oxum se banhar<br>
+                    A linda deusa, nas águas se banhava <br>
+                    Sorrindo me acenava<br>
+                    Como quem me abençoava <br>
+                    Deusa divina, rainha da beleza<br>
+                    Grande Orixá do ouro e da riqueza <br>
+                    Deusa das fontes, cascatas<br>
+                    E cachoeiras, com seu abebê<br>
+                    Quando dança é tão faceira <br>
+                    <br>
+                    E oraieuieu <br>
+                    Oraieuieu<br>
+                    Oraieuieu mamãe Oxum<br>
+                    oraieuieu<br>
+                    (Ê mamãe Oxum) <br>
+                    (BIS) <br>                                                            
+                </p>
+            </div>
+        </div>
+
+            <!-- Caixa de Ponto 9 -->
+        <div class="ponto-box">
+            <h5>A sua estrela brilhou no céu</h5>
+            <!-- Embutindo o vídeo do YouTube -->
+            <iframe width="200" height="113" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="letra-ponto">
+                <p> A sua estrela brilhou no céu<br>
+                    A sua lua é cor de prata<br>
+                    (BIS)<br>
+                    E nos seus rios há cachoeiras e cascatas<br>
+                    Gladiando grandes matas, mãe Oxum a trabalhar<br>
+                    (BIS)<br>
+                    Aieueu mamãe Oxum <br>
+                    Aieueu Oxum Marê<br>
+                    <br>
+                    Ouça seu canto, toda banda se encanta<br>
+                    Mãe Oxum vem na umbanda abençoar filhos de fé<br>
+                    (BIS)  <br>                                                                 
+                </p>
+            </div>
+        </div>
+
+            <!-- Caixa de Ponto 10 -->
+        <div class="ponto-box">
+            <h5></h5>
+            <!-- Embutindo o vídeo do YouTube -->
+            <iframe width="200" height="113" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="letra-ponto">
+                <p> Foi na beira do rio <br>
+                    Aonde Oxum chorou<br>
+                    (BIS)<br>
+                    Chora ye yeô<br>
+                    Venha salvar os filhos seus<br> 
+                    (BIS)<br>                                                                      
+                </p>
+            </div>
+        </div>
+
+         <!-- Caixa de Ponto 11 -->
+         <div class="ponto-box">
+            <h5>Nas suas águas quero me banhar</h5>
+            <!-- Embutindo o vídeo do YouTube -->
+            <iframe width="200" height="113" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="letra-ponto">
+                <p> Eu ajoelhei e pedi a Oxalá<br>
+                    Que me desse forças para caminhar <br>
+                    Que me abençoasse para eu prosseguir <br>
+                    A minha jornada tenho que cumprir <br>
+                    A mão do senhor está a me mostrar<br>
+                    Tudo que um dia eu tenho que passar <br>
+                    Pai Oxalá, ele me ouviu, ele decidiu <br>
+                    Mandou mamãe Oxum para me conduzir <br>
+                    Mandou mamãe Oxum para me guiar<br>
+                    <br>
+                    Ora ye yeu <br>
+                    Saravá mamãe, a minha mãe Oxum <br>
+                    Nas suas águas quero me banhar <br>
+                    Ela vem de aruanda pra me abençoar <br>
+                    (BIS)<br>                                                                          
+                </p>
+            </div>
+        </div>
+
+        <!-- Container para o botão de retorno -->
+        <div class="return-btn-container">
+            <a href="Mirim.html" class="btn-return">Voltar à Página Inicial</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Pontos da Escola de Mirim. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap JS e dependências -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

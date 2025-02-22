@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pontos da Escola de Caboclo Mirim</title>
+    <meta name="description" content="Site oficial da Escola de Caboclo Mirim, com informações sobre a doutrina e pontos de culto.">
+    <meta name="author" content="Escola de Caboclo Mirim">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #1e6e1e; /* Verde original */
+            color: #fff;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        header img {
+            max-width: 120px;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 50%;
+        }
+
+        header h1 {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: 500;
+            letter-spacing: 1px;
+        }
+
+        nav {
+            background-color: #1e6e1e; /* Verde original */
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            position: relative;
+            margin-bottom: 10px; /* Adicionando um espaço entre os itens de menu */
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1em;
+            padding: 14px 24px;
+            display: block;
+            text-transform: uppercase;
+            font-weight: 600;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #155e15; /* Verde mais escuro */
+            transform: scale(1.05);
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: rgba(30, 110, 30, 0.9); /* Verde original */
+            min-width: 200px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(10px);
+            transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s linear 0.3s;
+        }
+
+        .dropdown.show .dropdown-menu {
+            display: block;
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .dropdown-menu a {
+            color: #fff;
+            padding: 12px 16px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: #155e15; /* Verde mais escuro */
+        }
+
+        .home-section {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: #fff;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+
+        .home-section h2 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 2.8em;
+            margin-bottom: 30px;
+            color: #1e6e1e; /* Verde original */
+        }
+
+        .home-section img {
+            max-width: 85%;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .home-section img:hover {
+            transform: scale(1.05);
+        }
+
+        .home-section p {
+            font-size: 1.3em;
+            color: #555;
+            margin-bottom: 40px;
+        }
+
+        .home-section a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.2em;
+            padding: 12px 25px;
+            background-color: #1e6e1e; /* Verde original */
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .home-section a:hover {
+            background-color: #155e15; /* Verde mais escuro */
+        }
+
+        .logos-section {
+            padding: 60px 20px;
+            background-color: #f1f1f1;
+            text-align: center;
+        }
+
+        .logos-section h2 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            color: #1e6e1e; /* Verde original */
+        }
+
+        .logos-section .logo-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .logos-section .logo-container img {
+            max-width: 120px;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .logos-section .logo-container img:hover {
+            transform: scale(1.1);
+        }
+
+        footer {
+            background-color: #1e6e1e; /* Verde original */
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            font-size: 1.1em;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: flex-start;
+                display: none; /* Menu oculto por padrão */
+            }
+
+            nav ul li {
+                margin-bottom: 15px; /* Espaço maior entre os itens no menu mobile */
+            }
+
+            nav .navbar-toggler {
+                display: block;
+                background-color: transparent;
+                border: none;
+                padding: 8px;
+            }
+
+            .home-section h2 {
+                font-size: 2.3em;
+            }
+
+            .home-section a {
+                font-size: 1.1em;
+                padding: 10px 18px;
+            }
+
+            .logos-section .logo-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        /* Substituindo o ícone do menu hamburguer pela imagem personalizada */
+        .navbar-toggler-icon {
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRFveK65SKSEPIyq290dwp4lM0n461NVveWA&s'); /* URL da imagem personalizada */
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 30px;
+            height: 30px;
+        }
+       .btn-sobre-projeto {
+        display: inline-block;
+        padding: 15px 30px;  /* Aumenta o espaço interno do botão */
+        font-size: 18px;  /* Aumenta o tamanho da fonte */
+        background-color: #007bff;
+        color: white;
+        text-decoration: none;
+        border-radius: 12px;
+        margin-top: 20px;
+        text-align: center;
+        
+       }
+
+       .btn-sobre-projeto:hover {
+        background-color: #0056b3;
+    }
+
+
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <img src="https://tendaespiritamirim.com.br/wp-content/uploads/2019/03/Caboclo-Mirim_noTE-1-300x300.png" alt="Logo Escola de Caboclo Mirim">
+        <h1>Pontos da Escola de Caboclo Mirim</h1>
+    </header>
+
+    <!-- Menu de Navegação (Navbar) -->
+    <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Menu de Navegação">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir Menu">
+            <span class="navbar-toggler-icon"></span> <!-- Aqui vai a imagem personalizada -->
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+
+                <!--Aqui vai para a abertura da gira-->
+                <li class="nav-item"><a class="nav-link" href="https://urldefense.com/v3/__http://abertura.html__;!!ETlg2lRFTP_MLH8!ytKuuqjoIjXT9ijCKtdVv3iPxuKskDsBljbmTuFcTrVUtjM8nqC0Fy_VoUqIc24eT7wqsV3CnSsVzL2eM6AyF_Oz6-MBa5iDQikoPqc$" aria-label="Ir para Abertura de Gira">Abertura de Gira</a></li>
+                
+                <!-- Aqui vai para a página dos Orixás -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="orixasDropdown" role="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" aria-label="Orixás Menu">Orixás</a>
+                    <div class="dropdown-menu" aria-labelledby="orixasDropdown">
+                        <a class="dropdown-item" href="https://urldefense.com/v3/__http://oxala.html__;!!ETlg2lRFTP_MLH8!ytKuuqjoIjXT9ijCKtdVv3iPxuKskDsBljbmTuFcTrVUtjM8nqC0Fy_VoUqIc24eT7wqsV3CnSsVzL2eM6AyF_Oz6-MBa5iDD6Ej0kQ$" aria-label="Oxalá">Oxalá</a>
+                        <a class="dropdown-item" href="https://urldefense.com/v3/__http://oxossi.html__;!!ETlg2lRFTP_MLH8!ytKuuqjoIjXT9ijCKtdVv3iPxuKskDsBljbmTuFcTrVUtjM8nqC0Fy_VoUqIc24eT7wqsV3CnSsVzL2eM6AyF_Oz6-MBa5iDXnUNGO4$" aria-label="Oxóssi">Oxóssi</a>
+                        <a class="dropdown-item" href="https://urldefense.com/v3/__http://ogum.html__;!!ETlg2lRFTP_MLH8!ytKuuqjoIjXT9ijCKtdVv3iPxuKskDsBljbmTuFcTrVUtjM8nqC0Fy_VoUqIc24eT7wqsV3CnSsVzL2eM6AyF_Oz6-MBa5iDvSqPQjo$" aria-label="Ogum">Ogum</a>
+                        <a class="dropdown-item" href="https://urldefense.com/v3/__http://yemanja.html__;!!ETlg2lRFTP_MLH8!ytKuuqjoIjXT9ijCKtdVv3iPxuKskDsBljbmTuFcTrVUtjM8nqC0Fy_VoUqIc24eT7wqsV3CnSsVzL2eM6AyF_Oz6-MBa5iDaQULbeM$" aria-label="Yemanjá">Yemanjá</a>
+                        <a class="dropdown-item" href="https://urldefense.com/v3/__http://oxum.html__;!!ETlg2lRFTP_MLH8!ytKuuqjoIjXT9ijCKtdVv3iPxuKskDsBljbmTuFcTrVUtjM8nqC0Fy_VoUqIc24eT7wqsV3CnSsVzL2eM6AyF_Oz6-MBa5iDxHBFo68$" aria-label="Oxum">Oxum</a>
+                        <a class="dropdown-item" href="https://urldefense.com/v3/__http://nana.html__;!!ETlg2lRFTP_MLH8!ytKuuqjoIjXT9ijCKtdVv3iPxuKskDsBljbmTuFcTrVUtjM8nqC0Fy_VoUqIc24eT7wqsV3CnSsVzL2eM6AyF_Oz6-MBa5iDY3msdy8$" aria-label="Nanã">Nanã</a>
+                        <a class="dropdown-item" href="https://urldefense.com/v3/__http://iansa.html__;!!ETlg2lRFTP_MLH8!ytKuuqjoIjXT9ijCKtdVv3iPxuKskDsBljbmTuFcTrVUtjM8nqC0Fy_VoUqIc24eT7wqsV3CnSsVzL2eM6AyF_Oz6-MBa5iDsmO6azY$" aria-label="Iansã">Iansã</a>
+                        <a class="dropdown-item" href="https://urldefense.com/v3/__http://xango.html__;!!ETlg2lRFTP_MLH8!ytKuuqjoIjXT9ijCKtdVv3iPxuKskDsBljbmTuFcTrVUtjM8nqC0Fy_VoUqIc24eT7wqsV3CnSsVzL2eM6AyF_Oz6-MBa5iDmTLp26E$" aria-label="Xangô">Xangô</a>
+                    </div>
+                </li>
+                 
+                <!-- Aqui vai para a página dos caboclos -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="cabocloDropdown" role="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" aria-label="Caboclo Menu">Caboclo</a>
+                    <div class="dropdown-menu" aria-labelledby="cabocloDropdown">
+                        <a class="dropdown-item" href="https://urldefense.com/v3/__http://caboclo.html__;!!ETlg2lRFTP_MLH8!ytKuuqjoIjXT9ijCKtdVv3iPxuKskDsBljbmTuFcTrVUtjM8nqC0Fy_VoUqIc24eT7wqsV3CnSsVzL2eM6AyF_Oz6-MBa5iD_YQW0hE$" aria-label="Caboclo">Caboclo</a>
+                        <a class="dropdown-item" href="https://urldefense.com/v3/__http://boiadeiro.html__;!!ETlg2lRFTP_MLH8!ytKuuqjoIjXT9ijCKtdVv3iPxuKskDsBljbmTuFcTrVUtjM8nqC0Fy_VoUqIc24eT7wqsV3CnSsVzL2eM6AyF_Oz6-MBa5iDGfBWevI$" aria-label="Boiadeiro">Boiadeiro</a>
+                    </div>
+                </li>
+
+                <!-- Aqui vai para a página dos pretos velhos -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="pretoVelhoDropdown" role="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" aria-label="Preto Velho Menu">Preto Velho</a>
+                    <div class="dropdown-menu" aria-labelledby="pretoVelhoDropdown">
+                        <a class="dropdown-item" href="https://urldefense.com/v3/__http://congo.html__;!!ETlg2lRFTP_MLH8!ytKuuqjoIjXT9ijCKtdVv3iPxuKskDsBljbmTuFcTrVUtjM8nqC0Fy_VoUqIc24eT7wqsV3CnSsVzL2eM6AyF_Oz6-MBa5iDz0N_kLU$" aria-label="Congo">Congo</a>
+                        <a class="dropdown-item" href="https://urldefense.com/v3/__http://angola.html__;!!ETlg2lRFTP_MLH8!ytKuuqjoIjXT9ijCKtdVv3iPxuKskDsBljbmTuFcTrVUtjM8nqC0Fy_VoUqIc24eT7wqsV3CnSsVzL2eM6AyF_Oz6-MBa5iDo_zfMRA$" aria-label="Angola">Angola</a>
+                        <a class="dropdown-item" href="https://urldefense.com/v3/__http://minas.html__;!!ETlg2lRFTP_MLH8!ytKuuqjoIjXT9ijCKtdVv3iPxuKskDsBljbmTuFcTrVUtjM8nqC0Fy_VoUqIc24eT7wqsV3CnSsVzL2eM6AyF_Oz6-MBa5iD_6q_ElE$" aria-label="Minas">Minas</a>
+                        <a class="dropdown-item" href="https://urldefense.com/v3/__http://carreiro.html__;!!ETlg2lRFTP_MLH8!ytKuuqjoIjXT9ijCKtdVv3iPxuKskDsBljbmTuFcTrVUtjM8nqC0Fy_VoUqIc24eT7wqsV3CnSsVzL2eM6AyF_Oz6-MBa5iD6ai6WbQ$" aria-label="Carreiro">Carreiro</a>
+                        <a class="dropdown-item" href="https://urldefense.com/v3/__http://bahia.html__;!!ETlg2lRFTP_MLH8!ytKuuqjoIjXT9ijCKtdVv3iPxuKskDsBljbmTuFcTrVUtjM8nqC0Fy_VoUqIc24eT7wqsV3CnSsVzL2eM6AyF_Oz6-MBa5iDyzI1gNY$" aria-label="Bahia">Bahia</a>
+                        <a class="dropdown-item" href="https://urldefense.com/v3/__http://cativeiro.html__;!!ETlg2lRFTP_MLH8!ytKuuqjoIjXT9ijCKtdVv3iPxuKskDsBljbmTuFcTrVUtjM8nqC0Fy_VoUqIc24eT7wqsV3CnSsVzL2eM6AyF_Oz6-MBa5iDIjIiuGw$" aria-label="Cativeiro">Cativeiro</a>
+                        <a class="dropdown-item" href="https://urldefense.com/v3/__http://almas.html__;!!ETlg2lRFTP_MLH8!ytKuuqjoIjXT9ijCKtdVv3iPxuKskDsBljbmTuFcTrVUtjM8nqC0Fy_VoUqIc24eT7wqsV3CnSsVzL2eM6AyF_Oz6-MBa5iDegdCMJ0$" aria-label="Almas">Almas</a>
+                        <a class="dropdown-item" href="https://urldefense.com/v3/__http://santoantonio.html__;!!ETlg2lRFTP_MLH8!ytKuuqjoIjXT9ijCKtdVv3iPxuKskDsBljbmTuFcTrVUtjM8nqC0Fy_VoUqIc24eT7wqsV3CnSsVzL2eM6AyF_Oz6-MBa5iDtA9haZA$" aria-label="Santo Antônio">Santo Antônio</a>
+                    </div>
+                </li>
+
+                <!-- Aqui vai para a página de ibeijada -->
+                <li class="nav-item"><a class="nav-link" href="https://urldefense.com/v3/__http://ibeijada2.html__;!!ETlg2lRFTP_MLH8!ytKuuqjoIjXT9ijCKtdVv3iPxuKskDsBljbmTuFcTrVUtjM8nqC0Fy_VoUqIc24eT7wqsV3CnSsVzL2eM6AyF_Oz6-MBa5iDKwlQ8W4$" aria-label="Ir para Ibejada">Ibejada</a></li>
+
+                <!-- Aqui vai para a página de encerramento -->
+                <li class="nav-item"><a class="nav-link" href="https://urldefense.com/v3/__http://encerramento.html__;!!ETlg2lRFTP_MLH8!ytKuuqjoIjXT9ijCKtdVv3iPxuKskDsBljbmTuFcTrVUtjM8nqC0Fy_VoUqIc24eT7wqsV3CnSsVzL2eM6AyF_Oz6-MBa5iDGUjZEjM$" aria-label="Ir para Encerramento de Gira">Encerramento de Gira</a></li>
+
+        </div>
+    </nav>
+
+    <!-- Seção de Home -->
+    <main>
+        <section id="home" class="home-section">
+            <h2>Bem-vindo à Escola de Caboclo Mirim!</h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN-7EZqpBM52qlIbN_eza8t29lBfHuVBHhOw&s" alt="Escola de Caboclo Mirim">
+            <p>“A nossa Doutrina não conserta a vida de ninguém, mas cria condições para que cada um conserte a sua própria vida, de acordo com seu paladar.”</p>
+     <!-- Botão Sobre o Projeto -->
+    <a href="#sobre-projeto" class="btn-sobre-projeto">Sobre Nós</a>        
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 Pontos da Escola de Caboclo Mirim. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap JS e dependências -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".navbar-toggler").click(function () {
+                $(".navbar-collapse").toggle();
+            });
+        });
+    </script>
+
+</body>
+</html>

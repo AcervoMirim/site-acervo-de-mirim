@@ -1,0 +1,20 @@
+   //<!-- Seção de Logos das Casas Irmãs -->
+    <div class="logos-section">
+        <h2>Colaboradores</h2>
+        <div class="logo-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ83l52icPZbos2NPisGZjJMHW_rucIcrfgRg&s" alt="Logo Casa Irmã 1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA_rxZUUsouuJnXmJ9b1w_PwF4tUv79aI8vA&s" alt="Logo Casa Irmã 2">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWecueBc3cBjHks1koZwIG3VPl6UVvmOZH4Q&s" alt="Logo Casa Irmã 3">
+            <img src="https://lh3.googleusercontent.com/p/AF1QipNQh4BHQEBLJKrzCcQTcaEgMBGPtdssEnIROHxW=s680-w680-h510" alt="Logo Casa Irmã 4">
+        </div>
+    </div>
+
+A ideia de criar o Acervo de Pontos da Escola de Mirim nasceu de um sentimento muito pessoal: o desejo de preservar e compartilhar o conhecimento tão valioso que aprendi dentro da nossa tradição. A Escola de Mirim tem sido um caminho de aprendizado e conexão espiritual profundo para mim, e eu sempre senti que os pontos – esses cantos e orações tão poderosos e presentes em nossos rituais – mereciam ser guardados e acessíveis para todos que, como eu, buscam entender melhor a nossa prática.
+
+Com o tempo, percebi que, apesar de toda a riqueza de saberes que temos, muitos desses pontos estavam dispersos e, muitas vezes, difíceis de encontrar quando precisamos. Eles são essenciais para o nosso trabalho espiritual, mas nem sempre estavam disponíveis de maneira organizada para quem queria aprender ou se aprofundar. Foi aí que a ideia de reunir tudo isso em um único lugar começou a ganhar força.
+
+O que me motivou a fazer esse projeto foi o desejo de facilitar o acesso ao conhecimento. Quero que tanto quem já está na caminhada, quanto quem está começando agora, possa encontrar de forma simples e clara esses pontos, para poderem praticar com mais confiança e entendimento. Acredito que, ao compartilhar essa parte tão importante da nossa cultura e tradição, estou ajudando a manter a memória da nossa Escola viva, além de passar adiante o respeito e o amor que temos por ela.
+
+Esse acervo não é só uma coleção de pontos, mas um espaço onde cada um pode aprender, compartilhar e, quem sabe, até descobrir algo novo sobre a espiritualidade que tanto nos guia. Para mim, é uma forma de honrar o que já recebi e contribuir para que as próximas gerações também possam se conectar com tudo o que essa tradição tem a oferecer.
+
+Criar o Acervo de Pontos da Escola de Mirim é, de alguma forma, minha forma de retribuir tudo o que aprendi. E, ao fazer isso, espero que esse projeto se torne um legado, não só para mim, mas para todos aqueles que buscam se aprofundar na espiritualidade e na prática que tanto amamos.
